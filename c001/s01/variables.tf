@@ -126,5 +126,51 @@ variable "dss-sa-pvtendpt-pvt-svc-cnt-manual-cnt" {
 #   default = ["blob"]
 # }
 
+############################################
+# Postgresql Variables
+############################################
+
+variable "dss-postgresql-name" {
+  type = string
+  default ="dsspostgresql"
+}
+
+variable "dss-sku-name" {
+  default = "B_Gen5_2"
+}
+
+variable "dss-storage-mb" {
+  default = "5120"
+}
+
+variable "dss-backup-retention-days" {
+  default = "7"
+}
+
+variable "dss-geo-redundant-backup-enabled" {
+  default = "false"
+}
+
+variable "dss-auto-grow-enabled" {
+  default = "true"
+}
+
+variable "dss-administrator-login" {
+  default = "psqldssadmin"
+}
+
+variable "dss-administrator-login-password" {
+  default = "Psqldss@admin"
+}
+
+# variable "version" {
+#   type = number  
+#   default = 9.5
+# }
+
+variable "dss-ssl-enforcement-enabled" {
+  default = "true"
+}
+
 
 

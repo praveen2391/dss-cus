@@ -75,7 +75,13 @@ output "dss-sa-privateendpt-id" {
   value = module.c001_dss_sa_privateendpt.sa-privateendpt-id
 }
 
+#######################################
+# Postgresql Outputs
+#######################################
 
+output "dss-postgresql-id" {
+  value = module.c001_dss_postgresql.postgresql-id
+}
 
 
 
