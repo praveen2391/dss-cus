@@ -128,18 +128,18 @@ module "c001_dss_sa_privateendpt" {
 ############################################
 
 module "c001_dss_postgresql" {
-  source = "git@github.com:praveen2391/dss-cns.git//postgresql"
-  postgresql-name = var.dss-postgresql-name
-  location = var.dss-rg-location
-  rg-name = var.dss-rg-name
-  storage-mb = var.dss-storage-mb 
-  backup-retention-days = var.dss-backup-retention-days
+  source           = "git@github.com:praveen2391/dss-cns.git//postgresql"
+  postgresql-name              = var.dss-postgresql-name
+  location                     = var.dss-rg-location
+  rg-name                      = var.dss-rg-name
+  storage-mb                   = var.dss-storage-mb
+  backup-retention-days        = var.dss-backup-retention-days
   geo-redundant-backup-enabled = var.dss-geo-redundant-backup-enabled
-  auto-grow-enabled = var.dss-auto-grow-enabled
-  administrator-login = var.dss-administrator-login
+  auto-grow-enabled            = var.dss-auto-grow-enabled
+  administrator-login          = var.dss-administrator-login
   administrator-login-password = var.dss-administrator-login-password
   # version = var.pg-version
-  version = 11
+  # version                 = "11"
   ssl-enforcement-enabled = var.dss-ssl-enforcement-enabled
 
 }

@@ -131,8 +131,8 @@ variable "dss-sa-pvtendpt-pvt-svc-cnt-manual-cnt" {
 ############################################
 
 variable "dss-postgresql-name" {
-  type = string
-  default ="dsspostgresql"
+  type    = string
+  default = "dsspostgresql"
 }
 
 variable "dss-sku-name" {
