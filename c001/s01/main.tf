@@ -138,7 +138,8 @@ module "c001_dss_postgresql" {
   auto-grow-enabled = var.dss-auto-grow-enabled
   administrator-login = var.dss-administrator-login
   administrator-login-password = var.dss-administrator-login-password
-  version = var.version
+  # version = var.pg-version
+  version = 11
   ssl-enforcement-enabled = var.dss-ssl-enforcement-enabled
 
 }
