@@ -71,9 +71,9 @@ output "storage-blob-url" {
 # Storage-account Privateendpt Outputs
 #######################################
 
-# output "dss-sa-privateendpt-id" {
-#   value = module.c001_dss_sa-privateendpt.sa-privateendpt-id
-# }
+output "dss-sa-privateendpt-id" {
+  value = module.c001_dss_sa_privateendpt.sa-privateendpt-id
+}
 
 
 

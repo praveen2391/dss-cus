@@ -108,23 +108,23 @@ variable "dss-storage-blob-source" {
 # Storage-account Private-endpt Variables
 ############################################
 
-# variable "dss-sa-privateendpt-name" {
-#   type    = string
-#   default = "sa-pvtendpt"
-# }
+variable "dss-sa-privateendpt-name" {
+  type    = string
+  default = "sa-pvtendpt"
+}
 
-# variable "dss-sa-pvtendpt-pvt-svc-cnt-name" {
-#   type    = string
-#   default = "sa-pvtendpt-svc-cnt"
-# }
+variable "dss-sa-pvtendpt-pvt-svc-cnt-name" {
+  type    = string
+  default = "sa-pvtendpt-svc-cnt"
+}
 
-# variable "dss-sa-pvtendpt-pvt-svc-cnt-manual-cnt" {
-#   default = "false"
-# }
+variable "dss-sa-pvtendpt-pvt-svc-cnt-manual-cnt" {
+  default = "false"
+}
 
-# # variable "dss-sa-pvtendpt-pvt-svc-cnt-subresource-names" {
-# #   default = ["blob"]
-# # }
+# variable "dss-sa-pvtendpt-pvt-svc-cnt-subresource-names" {
+#   default = ["blob"]
+# }
 
 
 

@@ -109,18 +109,18 @@ module "c001_dss_storagecontainer_blob" {
 # Storage-account Private-endpt
 ############################################
 
-# module "c001_dss_sa-privateendpt" {
-#   source                              = "git@github.com:praveen2391/dss-cns.git//sa-privateendpt"
-#   sa-privateendpt-name                = var.dss-sa-privateendpt-name
-#   sa-privateendpt-location            = var.dss-rg-location
-#   sa-privateendpt-rg-name             = var.dss-rg-name
-#   sa-privateendpt-subnetid            = module.c001_dss_subnet.subnet-id
-#   sa-pvtendpt-pvt-svc-cnt-name        = var.dss-sa-pvtendpt-pvt-svc-cnt-name
-#   sa-pvtendpt-pvt-svc-cnt-resource-id = module.c001_dss_storageaccount.sa-id
-#   sa-pvtendpt-pvt-svc-cnt-manual-cnt  = var.dss-sa-pvtendpt-pvt-svc-cnt-manual-cnt
-#   # subresource_names = ["blob"] 
-#   # sa-pvtendpt-pvt-svc-cnt-subresource-names = var.dss-sa-pvtendpt-pvt-svc-cnt-subresource-names
-# }
+module "c001_dss_sa_privateendpt" {
+  source                              = "git@github.com:praveen2391/dss-cns.git//sa-privateendpt"
+  sa-privateendpt-name                = var.dss-sa-privateendpt-name
+  sa-privateendpt-location            = var.dss-rg-location
+  sa-privateendpt-rg-name             = var.dss-rg-name
+  sa-privateendpt-subnetid            = module.c001_dss_subnet.subnet-id
+  sa-pvtendpt-pvt-svc-cnt-name        = var.dss-sa-pvtendpt-pvt-svc-cnt-name
+  sa-pvtendpt-pvt-svc-cnt-resource-id = module.c001_dss_storageaccount.sa-id
+  sa-pvtendpt-pvt-svc-cnt-manual-cnt  = var.dss-sa-pvtendpt-pvt-svc-cnt-manual-cnt
+  # subresource_names = ["blob"] 
+  # sa-pvtendpt-pvt-svc-cnt-subresource-names = var.dss-sa-pvtendpt-pvt-svc-cnt-subresource-names
+}
 
 
 
