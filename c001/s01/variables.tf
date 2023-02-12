@@ -163,9 +163,9 @@ variable "dss-administrator-login-password" {
   default = "Psqldss@admin"
 }
 
-# variable "version" {
-#   type = number  
-#   default = 9.5
+# variable "pg-version" { 
+#   type = string(list)
+#   default = 11
 # }
 
 variable "dss-ssl-enforcement-enabled" {
