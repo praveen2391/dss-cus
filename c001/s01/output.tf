@@ -60,11 +60,11 @@ output "dss-storage-cnt-name" {
 #########################
 
 output "storage-blob-id" {
-  value = module.c001_dss_storageaccount.storage-blob-id
+  value = module.c001_dss_storagecontainer_blob.storage-blob-id
 }
 
 output "storage-blob-url" {
-  value = module.c001_dss_storageaccount.storage-blob-url
+  value = module.c001_dss_storagecontainer_blob.storage-blob-url
 }
 
 #######################################
