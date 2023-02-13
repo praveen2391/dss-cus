@@ -72,7 +72,7 @@ output "storage-blob-url" {
 #######################################
 
 output "dss-sa-privateendpt-id" {
-  value = module.c001_dss_sa_privateendpt.sa-privateendpt-id
+  value = module.c001_dss_sa_privateendpt.privateendpt-id
 }
 
 #######################################
