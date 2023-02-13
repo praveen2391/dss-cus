@@ -132,6 +132,7 @@ module "c001_dss_postgresql" {
   postgresql-name              = var.dss-postgresql-name
   location                     = var.dss-rg-location
   rg-name                      = var.dss-rg-name
+  sku-name = var.dss-sku-name
   storage-mb                   = var.dss-storage-mb
   backup-retention-days        = var.dss-backup-retention-days
   geo-redundant-backup-enabled = var.dss-geo-redundant-backup-enabled
