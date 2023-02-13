@@ -83,8 +83,13 @@ output "dss-postgresql-id" {
   value = module.c001_dss_postgresql.postgresql-id
 }
 
+#######################################
+# Postgresql-db Outputs
+#######################################
 
-
+output "dss-postgresql-db-id" {
+  value = module.c001_dss_postgresql_db.postgresql-db-id
+}
 
 
 

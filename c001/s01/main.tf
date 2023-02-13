@@ -124,7 +124,7 @@ module "c001_dss_sa_privateendpt" {
 
 
 ############################################
-# Postgres-sql
+# Postgres-sql server
 ############################################
 
 module "c001_dss_postgresql" {
@@ -144,9 +144,18 @@ module "c001_dss_postgresql" {
 
 }
 
+############################################
+# Postgres-sql DB
+############################################
 
-
-
+module "c001_dss_postgresql_db" {
+  source           = "git@github.com:praveen2391/dss-cns.git//postgresql-db"
+  postgresql-db-name = var.dss-postgresql-db-name
+  rg-name = var.dss-rg-name
+  server-name = module.c001_dss_postgresql.postgresql-name
+  charset = var.dss-charset
+  collation = var.dss-collation
+}
 
 
 

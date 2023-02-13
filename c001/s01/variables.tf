@@ -172,5 +172,20 @@ variable "dss-ssl-enforcement-enabled" {
   default = "true"
 }
 
+############################################
+# Postgresql-db Variables
+############################################
 
 
+variable "dss-postgresql-db-name" {
+  type = string
+  default = "dsspostgresqldb"
+}
+
+variable "dss-charset" {
+  default = "UTF8"
+}
+
+variable "dss-collation" {
+  default = "English_United States.1252"
+}
