@@ -168,7 +168,7 @@ module "c001_dss_pg_privateendpt" {
   pvtendpt-pvt-svc-cnt-name        = var.dss-pg-pvtendpt-pvt-svc-cnt-name
   pvtendpt-pvt-svc-cnt-resource-id = module.c001_dss_postgresql.postgresql-id
   pvtendpt-pvt-svc-cnt-manual-cnt  = var.dss-pg-pvtendpt-pvt-svc-cnt-manual-cnt
-  # subresource_names = ["blob"] 
+  # subresource_names = ["postgresqlServer"] 
   pvtendpt-pvt-svc-cnt-subresource-names = var.dss-pg-pvtendpt-pvt-svc-cnt-subresource-names
 }
 
