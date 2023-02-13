@@ -122,9 +122,9 @@ variable "dss-sa-pvtendpt-pvt-svc-cnt-manual-cnt" {
   default = "false"
 }
 
-# variable "dss-sa-pvtendpt-pvt-svc-cnt-subresource-names" {
-#   default = ["blob"]
-# }
+variable "dss-sa-pvtendpt-pvt-svc-cnt-subresource-names" {
+  default = ["blob"]
+}
 
 ############################################
 # Postgresql Variables
