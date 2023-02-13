@@ -152,7 +152,7 @@ module "c001_dss_postgresql_db" {
   source           = "git@github.com:praveen2391/dss-cns.git//postgresql-db"
   postgresql-db-name = var.dss-postgresql-db-name
   rg-name = var.dss-rg-name
-  server-name = module.c001_dss_postgresql.postgresql-name
+  server-name = var.dss-postgresql-name
   charset = var.dss-charset
   collation = var.dss-collation
 }
