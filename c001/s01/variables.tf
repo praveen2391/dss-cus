@@ -136,7 +136,7 @@ variable "dss-postgresql-name" {
 }
 
 variable "dss-sku-name" {
-  default = "B_Gen5_2"
+  default = "GP_Gen5_2"
 }
 
 variable "dss-storage-mb" {
