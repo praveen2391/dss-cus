@@ -92,7 +92,13 @@ output "dss-postgresql-db-id" {
 }
 
 
+#######################################
+# postgresql Privateendpt Outputs
+#######################################
 
+output "dss-pg-privateendpt-id" {
+  value = module.c001_dss_pg_privateendpt.privateendpt-id
+}
 
 
 

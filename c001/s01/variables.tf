@@ -189,3 +189,25 @@ variable "dss-charset" {
 variable "dss-collation" {
   default = "English_United States.1252"
 }
+
+############################################
+# Postgresql Private-endpt Variables
+############################################
+
+variable "dss-pg-privateendpt-name" {
+  type    = string
+  default = "pg-pvtendpt"
+}
+
+variable "dss-pg-pvtendpt-pvt-svc-cnt-name" {
+  type    = string
+  default = "pg-pvtendpt-svc-cnt"
+}
+
+variable "dss-pg-pvtendpt-pvt-svc-cnt-manual-cnt" {
+  default = "false"
+}
+
+variable "dss-pg-pvtendpt-pvt-svc-cnt-subresource-names" {
+  default = ["postgresqlServer"]
+}
