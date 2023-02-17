@@ -105,7 +105,7 @@ output "dss-pg-privateendpt-id" {
 ############################################
 
 output "dss-az-keyvault-id" {
-  value = module.c001_dss_az-keyvault.az-keyvault-id
+  value = module.c001_dss_az_keyvault.az-keyvault-id
 }
 
 

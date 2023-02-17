@@ -176,14 +176,14 @@ module "c001_dss_pg_privateendpt" {
 # AZ Keyvault
 ############################################
 
-module "c001_dss_az-keyvault" {
+module "c001_dss_az_keyvault" {
   source              = "git@github.com:praveen2391/dss-cns.git//az-keyvault"
   azkeyvault-name     = var.dss-azkeyvault-name
   location            = var.dss-rg-location
   resource-group-name = var.dss-rg-name
-  tenant-id           = var.tenant-id
+  tenant-id           = var.dss-tenant-id
   sku-name            = var.kv-sku-name
-  object-id           = var.object-id
+  # object-id           = var.dss-object-id
 }
 
 

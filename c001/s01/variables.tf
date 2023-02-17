@@ -220,13 +220,13 @@ variable "dss-azkeyvault-name" {
   default = "azkeyvault123456789"
 }
 
-variable "tenant-id" {
+variable "dss-tenant-id" {
   # default = "26bee4c3-ef4c-4a39-824a-71d4ace8efb6"
 }
 
-variable "object-id" {
+# variable "dss-object-id" {
 
-}
+# }
 
 variable "kv-sku-name" {
   default = "standard"
