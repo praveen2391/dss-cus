@@ -217,8 +217,7 @@ variable "dss-pg-pvtendpt-pvt-svc-cnt-subresource-names" {
 ############################################
 
 variable "dss-azkeyvault-name" {
-  type    = string
-  default = "azkeyvault1702"
+  default = "azkeyvault123456789"
 }
 
 variable "tenant-id" {
