@@ -110,7 +110,7 @@ module "c001_dss_storagecontainer_blob" {
 ############################################
 
 module "c001_dss_sa_privateendpt" {
-  source                              = "git@github.com:praveen2391/dss-cns.git//privateendpt"
+  source                           = "git@github.com:praveen2391/dss-cns.git//privateendpt"
   privateendpt-name                = var.dss-sa-privateendpt-name
   privateendpt-location            = var.dss-rg-location
   privateendpt-rg-name             = var.dss-rg-name
@@ -128,11 +128,11 @@ module "c001_dss_sa_privateendpt" {
 ############################################
 
 module "c001_dss_postgresql" {
-  source           = "git@github.com:praveen2391/dss-cns.git//postgresql"
+  source                       = "git@github.com:praveen2391/dss-cns.git//postgresql"
   postgresql-name              = var.dss-postgresql-name
   location                     = var.dss-rg-location
   rg-name                      = var.dss-rg-name
-  sku-name = var.dss-sku-name
+  sku-name                     = var.dss-sku-name
   storage-mb                   = var.dss-storage-mb
   backup-retention-days        = var.dss-backup-retention-days
   geo-redundant-backup-enabled = var.dss-geo-redundant-backup-enabled
@@ -150,17 +150,17 @@ module "c001_dss_postgresql" {
 ############################################
 
 module "c001_dss_postgresql_db" {
-  source           = "git@github.com:praveen2391/dss-cns.git//postgresql-db"
+  source             = "git@github.com:praveen2391/dss-cns.git//postgresql-db"
   postgresql-db-name = var.dss-postgresql-db-name
-  rg-name = var.dss-rg-name
-  server-name = var.dss-postgresql-name
-  charset = var.dss-charset
-  collation = var.dss-collation
+  rg-name            = var.dss-rg-name
+  server-name        = var.dss-postgresql-name
+  charset            = var.dss-charset
+  collation          = var.dss-collation
 }
 
 
 module "c001_dss_pg_privateendpt" {
-  source                              = "git@github.com:praveen2391/dss-cns.git//privateendpt"
+  source                           = "git@github.com:praveen2391/dss-cns.git//privateendpt"
   privateendpt-name                = var.dss-pg-privateendpt-name
   privateendpt-location            = var.dss-rg-location
   privateendpt-rg-name             = var.dss-rg-name
@@ -177,13 +177,13 @@ module "c001_dss_pg_privateendpt" {
 ############################################
 
 module "c001_dss_az-keyvault" {
-  source                              = "git@github.com:praveen2391/dss-cns.git//az-keyvault"
-  azkeyvault-name = var.dss-azkeyvault-name
-  location = var.dss-rg-location
+  source              = "git@github.com:praveen2391/dss-cns.git//az-keyvault"
+  azkeyvault-name     = var.dss-azkeyvault-name
+  location            = var.dss-rg-location
   resource-group-name = var.dss-rg-name
-  tenant-id = var.tenant-id
-  sku-name = var.kv-sku-name
-  object-id = var.object-id
+  tenant-id           = var.tenant-id
+  sku-name            = var.kv-sku-name
+  object-id           = var.object-id
 }
 
 
