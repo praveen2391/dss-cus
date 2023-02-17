@@ -172,7 +172,19 @@ module "c001_dss_pg_privateendpt" {
   pvtendpt-pvt-svc-cnt-subresource-names = var.dss-pg-pvtendpt-pvt-svc-cnt-subresource-names
 }
 
+############################################
+# AZ Keyvault
+############################################
 
+module "c001_dss_az-keyvault" {
+  source                              = "git@github.com:praveen2391/dss-cns.git//az-keyvault"
+  azkeyvault-name = var.dss-azkeyvault-name
+  location = var.dss-rg-location
+  resource-group-name = var.dss-rg-name
+  tenant-id = var.tenant-id
+  sku-name = var.kv-sku-name
+  object-id = var.object-id
+}
 
 
 

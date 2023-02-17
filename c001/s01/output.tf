@@ -100,7 +100,13 @@ output "dss-pg-privateendpt-id" {
   value = module.c001_dss_pg_privateendpt.privateendpt-id
 }
 
+############################################
+# AZ Keyvault outputs
+############################################
 
+output "dss-az-keyvault-id" {
+  value = module.c001_dss_az-keyvault.az-keyvault-id
+}
 
 
 

@@ -211,3 +211,24 @@ variable "dss-pg-pvtendpt-pvt-svc-cnt-manual-cnt" {
 variable "dss-pg-pvtendpt-pvt-svc-cnt-subresource-names" {
   default = ["postgresqlServer"]
 }
+
+############################################
+# AZ Keyvault Variables
+############################################
+
+variable "dss-azkeyvault-name" {
+  type = string
+  default = "azkeyvault1702"
+}
+
+variable "tenant-id" {
+  default = "26bee4c3-ef4c-4a39-824a-71d4ace8efb6"
+}
+
+variable "object-id" {
+  
+}
+
+variable "kv-sku-name" {
+  default = "standard"
+}
