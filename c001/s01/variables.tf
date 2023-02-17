@@ -225,7 +225,7 @@ variable "dss-tenant-id" {
 }
 
 variable "dss-object-id" {
-
+  default = "79074312-bb06-4f80-b21f-e7d718bfc109"
 }
 
 variable "kv-sku-name" {
