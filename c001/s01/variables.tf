@@ -221,12 +221,12 @@ variable "dss-azkeyvault-name" {
 }
 
 variable "dss-tenant-id" {
-  # default = "26bee4c3-ef4c-4a39-824a-71d4ace8efb6"
+  default = "26bee4c3-ef4c-4a39-824a-71d4ace8efb6"
 }
 
-# variable "dss-object-id" {
+variable "dss-object-id" {
 
-# }
+}
 
 variable "kv-sku-name" {
   default = "standard"

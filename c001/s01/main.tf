@@ -183,7 +183,7 @@ module "c001_dss_az_keyvault" {
   resource-group-name = var.dss-rg-name
   tenant-id           = var.dss-tenant-id
   sku-name            = var.kv-sku-name
-  # object-id           = var.dss-object-id
+  object-id           = var.dss-object-id
 }
 
 
